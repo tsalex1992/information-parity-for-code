@@ -1,0 +1,1434 @@
+{
+  "source": "IFEvalCode paper tables transcribed from https://arxiv.org/html/2507.22462v1",
+  "paper": "https://arxiv.org/html/2507.22462v1",
+  "metric": "pass@1 (%)",
+  "languages": [
+    "Python",
+    "Java",
+    "C++",
+    "C#",
+    "TypeScript",
+    "JavaScript",
+    "PHP",
+    "Shell"
+  ],
+  "local_model_map": {
+    "./models/qwen2.5-coder-0.5b": {
+      "benchmark_model": "Qwen2.5-Coder-0.5B",
+      "mapping_quality": "exact"
+    },
+    "./models/deepseek-coder-1.3b-instruct": {
+      "benchmark_model": "Deepseek-Coder-1.3B",
+      "mapping_quality": "exact"
+    },
+    "./models/qwen2.5-coder-1.5b": {
+      "benchmark_model": "Qwen2.5-Coder-1.5B",
+      "mapping_quality": "exact"
+    },
+    "./models/opencoder-1.5b-instruct": {
+      "benchmark_model": "OpenCoder-1.5B",
+      "mapping_quality": "exact"
+    },
+    "./models/yi-coder-1.5b-chat": {
+      "benchmark_model": "Yi-Coder-1.5B",
+      "mapping_quality": "exact"
+    },
+    "./models/qwen3-0.6b": {
+      "benchmark_model": "Qwen3-0.6B",
+      "mapping_quality": "exact"
+    },
+    "./models/qwen3-1.7b": {
+      "benchmark_model": "Qwen3-1.7B",
+      "mapping_quality": "exact"
+    },
+    "./models/qwen2.5-coder-3b": {
+      "benchmark_model": "Qwen2.5-Coder-3B",
+      "mapping_quality": "exact"
+    },
+    "./models/granite-coder-3b-base-128k": {
+      "benchmark_model": "Granite-Coder-3B",
+      "mapping_quality": "exact"
+    },
+    "./models/qwen3-4b": {
+      "benchmark_model": "Qwen3-4B",
+      "mapping_quality": "exact"
+    },
+    "./models/granite-coder-8b-code-instruct-128k": {
+      "benchmark_model": "Granite-Coder-8B",
+      "mapping_quality": "exact",
+      "benchmark_hf_slug": "ibm-granite/granite-8b-code-instruct-128k",
+      "score_source": "IFEvalCode Table 3 (English) and Table 4 (Chinese), row `Granite-Coder | 8B`"
+    },
+    "./models/opencoder-8b-instruct": {
+      "benchmark_model": "OpenCoder-8B",
+      "mapping_quality": "exact",
+      "benchmark_hf_slug": "infly/OpenCoder-8B-Instruct",
+      "score_source": "IFEvalCode Table 3 (English) and Table 4 (Chinese), row `OpenCoder | 8B`"
+    },
+    "./models/qwen3-8b": {
+      "benchmark_model": "Qwen3-8B",
+      "mapping_quality": "exact",
+      "benchmark_hf_slug": "Qwen/Qwen3-8B",
+      "score_source": "IFEvalCode Table 3 (English) and Table 4 (Chinese), row `Qwen3 | 8B`"
+    },
+    "./models/codellama-7b-instruct": {
+      "benchmark_model": "CodeLlama-7B-Instruct",
+      "mapping_quality": "exact"
+    },
+    "./models/deepseek-coder-6.7b-instruct": {
+      "benchmark_model": "DeepSeek-Coder-6.7B-Instruct",
+      "mapping_quality": "exact"
+    },
+    "./models/codeqwen1.5-7b-chat": {
+      "benchmark_model": "CodeQwen1.5-7B-Chat",
+      "mapping_quality": "exact"
+    },
+    "./models/qwen2.5-coder-7b": {
+      "benchmark_model": "Qwen2.5-Coder-7B",
+      "mapping_quality": "exact"
+    },
+    "./models/qwen3-14b": {
+      "benchmark_model": "Qwen3-14B",
+      "mapping_quality": "exact"
+    },
+    "./models/codellama-34b-instruct-hf": {
+      "benchmark_model": "CodeLlama-34B-Instruct",
+      "mapping_quality": "exact"
+    },
+    "./models/deepseek-coder-33b-instruct": {
+      "benchmark_model": "DeepSeek-Coder-33B-Instruct",
+      "mapping_quality": "exact"
+    },
+    "./models/qwen3-32b": {
+      "benchmark_model": "Qwen3-32B",
+      "mapping_quality": "exact"
+    }
+  },
+  "models": {
+    "Qwen2.5-Coder-0.5B": {
+      "source_label": "Qwen2.5-Coder 0.5B",
+      "scores": {
+        "english_correctness": {
+          "Python": 18.1,
+          "Java": 8.8,
+          "C++": 8.0,
+          "C#": 9.7,
+          "TypeScript": 2.0,
+          "JavaScript": 13.0,
+          "PHP": 11.0,
+          "Shell": 3.0
+        },
+        "english_instruction": {
+          "Python": 19.0,
+          "Java": 2.0,
+          "C++": 2.0,
+          "C#": 1.9,
+          "TypeScript": 18.0,
+          "JavaScript": 12.0,
+          "PHP": 4.0,
+          "Shell": 9.0
+        },
+        "chinese_correctness": {
+          "Python": 15.2,
+          "Java": 10.8,
+          "C++": 8.0,
+          "C#": 7.8,
+          "TypeScript": 1.0,
+          "JavaScript": 13.0,
+          "PHP": 7.0,
+          "Shell": 1.0
+        },
+        "chinese_instruction": {
+          "Python": 16.2,
+          "Java": 2.0,
+          "C++": 3.0,
+          "C#": 1.9,
+          "TypeScript": 14.0,
+          "JavaScript": 15.0,
+          "PHP": 7.0,
+          "Shell": 11.0
+        }
+      }
+    },
+    "Qwen2.5-Coder-1.5B": {
+      "source_label": "Qwen2.5-Coder 1.5B",
+      "scores": {
+        "english_correctness": {
+          "Python": 32.4,
+          "Java": 10.8,
+          "C++": 3.0,
+          "C#": 1.9,
+          "TypeScript": 6.0,
+          "JavaScript": 24.0,
+          "PHP": 16.0,
+          "Shell": 11.0
+        },
+        "english_instruction": {
+          "Python": 22.9,
+          "Java": 2.9,
+          "C++": 3.0,
+          "C#": 1.9,
+          "TypeScript": 17.0,
+          "JavaScript": 21.0,
+          "PHP": 5.0,
+          "Shell": 17.0
+        },
+        "chinese_correctness": {
+          "Python": 28.6,
+          "Java": 9.8,
+          "C++": 2.0,
+          "C#": 0.0,
+          "TypeScript": 6.0,
+          "JavaScript": 28.0,
+          "PHP": 18.0,
+          "Shell": 4.0
+        },
+        "chinese_instruction": {
+          "Python": 21.9,
+          "Java": 2.9,
+          "C++": 5.0,
+          "C#": 1.9,
+          "TypeScript": 20.0,
+          "JavaScript": 23.0,
+          "PHP": 11.0,
+          "Shell": 24.0
+        }
+      }
+    },
+    "Qwen2.5-Coder-3B": {
+      "source_label": "Qwen2.5-Coder 3B",
+      "scores": {
+        "english_correctness": {
+          "Python": 35.2,
+          "Java": 11.8,
+          "C++": 11.0,
+          "C#": 11.7,
+          "TypeScript": 0.0,
+          "JavaScript": 26.0,
+          "PHP": 22.0,
+          "Shell": 15.0
+        },
+        "english_instruction": {
+          "Python": 24.8,
+          "Java": 2.0,
+          "C++": 5.0,
+          "C#": 1.9,
+          "TypeScript": 18.0,
+          "JavaScript": 29.0,
+          "PHP": 12.0,
+          "Shell": 23.0
+        },
+        "chinese_correctness": {
+          "Python": 31.4,
+          "Java": 13.7,
+          "C++": 12.0,
+          "C#": 11.7,
+          "TypeScript": 7.0,
+          "JavaScript": 31.0,
+          "PHP": 27.0,
+          "Shell": 10.0
+        },
+        "chinese_instruction": {
+          "Python": 20.0,
+          "Java": 3.9,
+          "C++": 5.0,
+          "C#": 2.9,
+          "TypeScript": 19.0,
+          "JavaScript": 23.0,
+          "PHP": 12.0,
+          "Shell": 30.0
+        }
+      }
+    },
+    "Deepseek-Coder-1.3B": {
+      "source_label": "Deepseek-Coder 1.3B",
+      "scores": {
+        "english_correctness": {
+          "Python": 24.8,
+          "Java": 19.6,
+          "C++": 16.0,
+          "C#": 0.0,
+          "TypeScript": 0.0,
+          "JavaScript": 22.0,
+          "PHP": 10.0,
+          "Shell": 4.0
+        },
+        "english_instruction": {
+          "Python": 17.1,
+          "Java": 2.0,
+          "C++": 3.0,
+          "C#": 1.9,
+          "TypeScript": 1.0,
+          "JavaScript": 13.0,
+          "PHP": 3.0,
+          "Shell": 9.0
+        },
+        "chinese_correctness": {
+          "Python": 22.9,
+          "Java": 14.7,
+          "C++": 7.0,
+          "C#": 1.9,
+          "TypeScript": 0.0,
+          "JavaScript": 16.0,
+          "PHP": 7.0,
+          "Shell": 1.0
+        },
+        "chinese_instruction": {
+          "Python": 10.5,
+          "Java": 1.0,
+          "C++": 2.0,
+          "C#": 1.9,
+          "TypeScript": 1.0,
+          "JavaScript": 13.0,
+          "PHP": 7.0,
+          "Shell": 2.0
+        }
+      }
+    },
+    "OpenCoder-1.5B": {
+      "source_label": "OpenCoder 1.5B",
+      "scores": {
+        "english_correctness": {
+          "Python": 37.1,
+          "Java": 16.7,
+          "C++": 25.0,
+          "C#": 4.9,
+          "TypeScript": 9.0,
+          "JavaScript": 22.0,
+          "PHP": 21.0,
+          "Shell": 7.0
+        },
+        "english_instruction": {
+          "Python": 23.8,
+          "Java": 3.9,
+          "C++": 3.0,
+          "C#": 1.9,
+          "TypeScript": 14.0,
+          "JavaScript": 13.0,
+          "PHP": 4.0,
+          "Shell": 18.0
+        },
+        "chinese_correctness": {
+          "Python": 39.0,
+          "Java": 21.6,
+          "C++": 20.0,
+          "C#": 6.8,
+          "TypeScript": 10.0,
+          "JavaScript": 18.0,
+          "PHP": 21.0,
+          "Shell": 7.0
+        },
+        "chinese_instruction": {
+          "Python": 16.2,
+          "Java": 3.9,
+          "C++": 2.0,
+          "C#": 1.9,
+          "TypeScript": 14.0,
+          "JavaScript": 14.0,
+          "PHP": 8.0,
+          "Shell": 17.0
+        }
+      }
+    },
+    "Yi-Coder-1.5B": {
+      "source_label": "Yi-Coder 1.5B",
+      "scores": {
+        "english_correctness": {
+          "Python": 32.4,
+          "Java": 13.7,
+          "C++": 13.0,
+          "C#": 11.7,
+          "TypeScript": 8.0,
+          "JavaScript": 26.0,
+          "PHP": 16.0,
+          "Shell": 8.0
+        },
+        "english_instruction": {
+          "Python": 21.0,
+          "Java": 2.0,
+          "C++": 4.0,
+          "C#": 2.9,
+          "TypeScript": 17.0,
+          "JavaScript": 21.0,
+          "PHP": 4.0,
+          "Shell": 14.0
+        },
+        "chinese_correctness": {
+          "Python": 34.3,
+          "Java": 15.7,
+          "C++": 16.0,
+          "C#": 14.6,
+          "TypeScript": 10.0,
+          "JavaScript": 22.0,
+          "PHP": 15.0,
+          "Shell": 2.0
+        },
+        "chinese_instruction": {
+          "Python": 17.1,
+          "Java": 1.0,
+          "C++": 5.0,
+          "C#": 1.9,
+          "TypeScript": 11.0,
+          "JavaScript": 21.0,
+          "PHP": 7.0,
+          "Shell": 13.0
+        }
+      }
+    },
+    "Qwen3-0.6B": {
+      "source_label": "Qwen3 0.6B",
+      "scores": {
+        "english_correctness": {
+          "Python": 14.3,
+          "Java": 2.9,
+          "C++": 0.0,
+          "C#": 0.0,
+          "TypeScript": 2.0,
+          "JavaScript": 18.0,
+          "PHP": 10.0,
+          "Shell": 2.0
+        },
+        "english_instruction": {
+          "Python": 23.8,
+          "Java": 2.9,
+          "C++": 5.0,
+          "C#": 2.9,
+          "TypeScript": 24.0,
+          "JavaScript": 22.0,
+          "PHP": 7.0,
+          "Shell": 14.0
+        },
+        "chinese_correctness": {
+          "Python": 11.4,
+          "Java": 2.9,
+          "C++": 1.0,
+          "C#": 0.0,
+          "TypeScript": 0.0,
+          "JavaScript": 13.0,
+          "PHP": 8.0,
+          "Shell": 0.0
+        },
+        "chinese_instruction": {
+          "Python": 21.0,
+          "Java": 3.9,
+          "C++": 6.0,
+          "C#": 1.9,
+          "TypeScript": 25.0,
+          "JavaScript": 19.0,
+          "PHP": 15.0,
+          "Shell": 22.0
+        }
+      }
+    },
+    "Qwen3-1.7B": {
+      "source_label": "Qwen3 1.7B",
+      "scores": {
+        "english_correctness": {
+          "Python": 23.8,
+          "Java": 8.8,
+          "C++": 3.0,
+          "C#": 3.9,
+          "TypeScript": 12.0,
+          "JavaScript": 22.0,
+          "PHP": 19.0,
+          "Shell": 7.0
+        },
+        "english_instruction": {
+          "Python": 26.7,
+          "Java": 3.9,
+          "C++": 4.0,
+          "C#": 1.9,
+          "TypeScript": 22.0,
+          "JavaScript": 16.0,
+          "PHP": 9.0,
+          "Shell": 23.0
+        },
+        "chinese_correctness": {
+          "Python": 27.6,
+          "Java": 6.9,
+          "C++": 4.0,
+          "C#": 1.0,
+          "TypeScript": 9.0,
+          "JavaScript": 19.0,
+          "PHP": 15.0,
+          "Shell": 5.0
+        },
+        "chinese_instruction": {
+          "Python": 29.5,
+          "Java": 3.9,
+          "C++": 5.0,
+          "C#": 1.9,
+          "TypeScript": 25.0,
+          "JavaScript": 19.0,
+          "PHP": 13.0,
+          "Shell": 31.0
+        }
+      }
+    },
+    "Granite-Coder-3B": {
+      "source_label": "Granite-Coder 3B",
+      "scores": {
+        "english_correctness": {
+          "Python": 25.7,
+          "Java": 10.8,
+          "C++": 7.0,
+          "C#": 12.6,
+          "TypeScript": 6.0,
+          "JavaScript": 18.0,
+          "PHP": 15.0,
+          "Shell": 5.0
+        },
+        "english_instruction": {
+          "Python": 21.0,
+          "Java": 4.9,
+          "C++": 3.0,
+          "C#": 3.9,
+          "TypeScript": 14.0,
+          "JavaScript": 11.0,
+          "PHP": 1.0,
+          "Shell": 12.0
+        },
+        "chinese_correctness": {
+          "Python": 25.7,
+          "Java": 10.8,
+          "C++": 7.0,
+          "C#": 12.6,
+          "TypeScript": 6.0,
+          "JavaScript": 18.0,
+          "PHP": 15.0,
+          "Shell": 5.0
+        },
+        "chinese_instruction": {
+          "Python": 21.0,
+          "Java": 4.9,
+          "C++": 3.0,
+          "C#": 3.9,
+          "TypeScript": 14.0,
+          "JavaScript": 11.0,
+          "PHP": 1.0,
+          "Shell": 12.0
+        }
+      }
+    },
+    "Qwen3-4B": {
+      "source_label": "Qwen3 4B",
+      "source_hf_slug": "Qwen/Qwen3-4B",
+      "score_source": {
+        "english": "IFEvalCode Table 3 (English evaluation), row `Qwen3 | 4B`",
+        "chinese": "IFEvalCode Table 4 (Chinese evaluation), row `Qwen3 | 4B`"
+      },
+      "scores": {
+        "english_correctness": {
+          "Python": 26.7,
+          "Java": 7.8,
+          "C++": 7.0,
+          "C#": 1.9,
+          "TypeScript": 16.0,
+          "JavaScript": 29.0,
+          "PHP": 28.0,
+          "Shell": 7.0
+        },
+        "english_instruction": {
+          "Python": 28.6,
+          "Java": 5.9,
+          "C++": 6.0,
+          "C#": 1.9,
+          "TypeScript": 25.0,
+          "JavaScript": 28.0,
+          "PHP": 13.0,
+          "Shell": 38.0
+        },
+        "chinese_correctness": {
+          "Python": 24.8,
+          "Java": 6.9,
+          "C++": 5.0,
+          "C#": 2.9,
+          "TypeScript": 14.0,
+          "JavaScript": 28.0,
+          "PHP": 29.0,
+          "Shell": 8.0
+        },
+        "chinese_instruction": {
+          "Python": 30.5,
+          "Java": 7.8,
+          "C++": 4.0,
+          "C#": 3.9,
+          "TypeScript": 26.0,
+          "JavaScript": 31.0,
+          "PHP": 20.0,
+          "Shell": 47.0
+        }
+      }
+    },
+    "Granite-Coder-8B": {
+      "source_label": "Granite-Coder 8B",
+      "source_hf_slug": "ibm-granite/granite-8b-code-instruct-128k",
+      "score_source": {
+        "english": "IFEvalCode Table 3 (English evaluation), row `Granite-Coder | 8B`",
+        "chinese": "IFEvalCode Table 4 (Chinese evaluation), row `Granite-Coder | 8B`"
+      },
+      "scores": {
+        "english_correctness": {
+          "Python": 35.2,
+          "Java": 11.8,
+          "C++": 11.0,
+          "C#": 3.9,
+          "TypeScript": 13.0,
+          "JavaScript": 32.0,
+          "PHP": 21.0,
+          "Shell": 11.0
+        },
+        "english_instruction": {
+          "Python": 19.0,
+          "Java": 3.9,
+          "C++": 3.0,
+          "C#": 1.9,
+          "TypeScript": 15.0,
+          "JavaScript": 15.0,
+          "PHP": 1.0,
+          "Shell": 8.0
+        },
+        "chinese_correctness": {
+          "Python": 32.4,
+          "Java": 11.8,
+          "C++": 14.0,
+          "C#": 6.8,
+          "TypeScript": 9.0,
+          "JavaScript": 29.0,
+          "PHP": 9.0,
+          "Shell": 10.0
+        },
+        "chinese_instruction": {
+          "Python": 19.0,
+          "Java": 3.9,
+          "C++": 4.0,
+          "C#": 1.9,
+          "TypeScript": 13.0,
+          "JavaScript": 19.0,
+          "PHP": 3.0,
+          "Shell": 16.0
+        }
+      }
+    },
+    "OpenCoder-8B": {
+      "source_label": "OpenCoder 8B",
+      "source_hf_slug": "infly/OpenCoder-8B-Instruct",
+      "score_source": {
+        "english": "IFEvalCode Table 3 (English evaluation), row `OpenCoder | 8B`",
+        "chinese": "IFEvalCode Table 4 (Chinese evaluation), row `OpenCoder | 8B`"
+      },
+      "scores": {
+        "english_correctness": {
+          "Python": 38.1,
+          "Java": 21.6,
+          "C++": 24.0,
+          "C#": 5.8,
+          "TypeScript": 16.0,
+          "JavaScript": 42.0,
+          "PHP": 26.0,
+          "Shell": 14.0
+        },
+        "english_instruction": {
+          "Python": 24.8,
+          "Java": 5.9,
+          "C++": 4.0,
+          "C#": 1.9,
+          "TypeScript": 17.0,
+          "JavaScript": 19.0,
+          "PHP": 9.0,
+          "Shell": 15.0
+        },
+        "chinese_correctness": {
+          "Python": 40.0,
+          "Java": 17.6,
+          "C++": 16.0,
+          "C#": 4.9,
+          "TypeScript": 15.0,
+          "JavaScript": 30.0,
+          "PHP": 32.0,
+          "Shell": 13.0
+        },
+        "chinese_instruction": {
+          "Python": 25.7,
+          "Java": 4.9,
+          "C++": 5.0,
+          "C#": 1.9,
+          "TypeScript": 19.0,
+          "JavaScript": 19.0,
+          "PHP": 12.0,
+          "Shell": 26.0
+        }
+      }
+    },
+    "Qwen3-8B": {
+      "source_label": "Qwen3 8B",
+      "source_hf_slug": "Qwen/Qwen3-8B",
+      "score_source": {
+        "english": "IFEvalCode Table 3 (English evaluation), row `Qwen3 | 8B`",
+        "chinese": "IFEvalCode Table 4 (Chinese evaluation), row `Qwen3 | 8B`"
+      },
+      "scores": {
+        "english_correctness": {
+          "Python": 35.2,
+          "Java": 13.7,
+          "C++": 12.0,
+          "C#": 8.7,
+          "TypeScript": 0.0,
+          "JavaScript": 30.0,
+          "PHP": 30.0,
+          "Shell": 9.0
+        },
+        "english_instruction": {
+          "Python": 33.3,
+          "Java": 7.8,
+          "C++": 4.0,
+          "C#": 4.9,
+          "TypeScript": 0.0,
+          "JavaScript": 26.0,
+          "PHP": 19.0,
+          "Shell": 27.0
+        },
+        "chinese_correctness": {
+          "Python": 36.2,
+          "Java": 11.8,
+          "C++": 7.0,
+          "C#": 5.8,
+          "TypeScript": 0.0,
+          "JavaScript": 29.0,
+          "PHP": 32.0,
+          "Shell": 6.0
+        },
+        "chinese_instruction": {
+          "Python": 32.4,
+          "Java": 5.9,
+          "C++": 5.0,
+          "C#": 3.9,
+          "TypeScript": 0.0,
+          "JavaScript": 32.0,
+          "PHP": 27.0,
+          "Shell": 18.0
+        }
+      }
+    },
+    "CodeLlama-7B-Instruct": {
+      "source_label": "CodeLlama 7B",
+      "scores": {
+        "english_correctness": {
+          "Python": 18.1,
+          "Java": 5.9,
+          "C++": 3.0,
+          "C#": 2.9,
+          "TypeScript": 7.0,
+          "JavaScript": 20.0,
+          "PHP": 13.0,
+          "Shell": 10.0
+        },
+        "english_instruction": {
+          "Python": 22.9,
+          "Java": 3.9,
+          "C++": 4.0,
+          "C#": 2.9,
+          "TypeScript": 19.0,
+          "JavaScript": 22.0,
+          "PHP": 9.0,
+          "Shell": 21.0
+        },
+        "chinese_correctness": {
+          "Python": 0.0,
+          "Java": 5.9,
+          "C++": 1.0,
+          "C#": 0.0,
+          "TypeScript": 5.0,
+          "JavaScript": 23.0,
+          "PHP": 1.0,
+          "Shell": 2.0
+        },
+        "chinese_instruction": {
+          "Python": 1.9,
+          "Java": 1.0,
+          "C++": 3.0,
+          "C#": 2.9,
+          "TypeScript": 2.0,
+          "JavaScript": 0.0,
+          "PHP": 2.0,
+          "Shell": 17.0
+        }
+      }
+    },
+    "DeepSeek-Coder-6.7B-Instruct": {
+      "source_label": "Deepseek-Coder 6.7B",
+      "scores": {
+        "english_correctness": {
+          "Python": 37.1,
+          "Java": 27.5,
+          "C++": 20.0,
+          "C#": 4.9,
+          "TypeScript": 16.0,
+          "JavaScript": 30.0,
+          "PHP": 30.0,
+          "Shell": 12.0
+        },
+        "english_instruction": {
+          "Python": 21.9,
+          "Java": 7.8,
+          "C++": 3.0,
+          "C#": 1.9,
+          "TypeScript": 17.0,
+          "JavaScript": 20.0,
+          "PHP": 8.0,
+          "Shell": 19.0
+        },
+        "chinese_correctness": {
+          "Python": 38.1,
+          "Java": 20.6,
+          "C++": 16.0,
+          "C#": 2.9,
+          "TypeScript": 18.0,
+          "JavaScript": 34.0,
+          "PHP": 25.0,
+          "Shell": 16.0
+        },
+        "chinese_instruction": {
+          "Python": 23.8,
+          "Java": 3.9,
+          "C++": 3.0,
+          "C#": 1.9,
+          "TypeScript": 16.0,
+          "JavaScript": 17.0,
+          "PHP": 10.0,
+          "Shell": 23.0
+        }
+      }
+    },
+    "CodeQwen1.5-7B-Chat": {
+      "source_label": "CodeQwen1.5 7B",
+      "scores": {
+        "english_correctness": {
+          "Python": 33.3,
+          "Java": 17.6,
+          "C++": 10.0,
+          "C#": 4.9,
+          "TypeScript": 14.0,
+          "JavaScript": 33.0,
+          "PHP": 29.0,
+          "Shell": 17.0
+        },
+        "english_instruction": {
+          "Python": 26.7,
+          "Java": 5.9,
+          "C++": 4.0,
+          "C#": 1.9,
+          "TypeScript": 23.0,
+          "JavaScript": 22.0,
+          "PHP": 9.0,
+          "Shell": 18.0
+        },
+        "chinese_correctness": {
+          "Python": 41.0,
+          "Java": 15.7,
+          "C++": 12.0,
+          "C#": 9.7,
+          "TypeScript": 12.0,
+          "JavaScript": 33.0,
+          "PHP": 27.0,
+          "Shell": 13.0
+        },
+        "chinese_instruction": {
+          "Python": 21.9,
+          "Java": 4.9,
+          "C++": 4.0,
+          "C#": 1.9,
+          "TypeScript": 23.0,
+          "JavaScript": 25.0,
+          "PHP": 11.0,
+          "Shell": 23.0
+        }
+      }
+    },
+    "Qwen2.5-Coder-7B": {
+      "source_label": "Qwen2.5-Coder 7B",
+      "scores": {
+        "english_correctness": {
+          "Python": 41.9,
+          "Java": 25.5,
+          "C++": 16.0,
+          "C#": 11.7,
+          "TypeScript": 19.0,
+          "JavaScript": 36.0,
+          "PHP": 43.0,
+          "Shell": 20.0
+        },
+        "english_instruction": {
+          "Python": 27.6,
+          "Java": 3.9,
+          "C++": 3.0,
+          "C#": 2.9,
+          "TypeScript": 22.0,
+          "JavaScript": 30.0,
+          "PHP": 11.0,
+          "Shell": 28.0
+        },
+        "chinese_correctness": {
+          "Python": 42.9,
+          "Java": 21.6,
+          "C++": 11.0,
+          "C#": 6.8,
+          "TypeScript": 16.0,
+          "JavaScript": 39.0,
+          "PHP": 36.0,
+          "Shell": 21.0
+        },
+        "chinese_instruction": {
+          "Python": 27.6,
+          "Java": 4.9,
+          "C++": 5.0,
+          "C#": 2.9,
+          "TypeScript": 21.0,
+          "JavaScript": 29.0,
+          "PHP": 11.0,
+          "Shell": 32.0
+        }
+      }
+    },
+    "Qwen2.5-Coder-14B": {
+      "source_label": "Qwen2.5-Coder 14B",
+      "scores": {
+        "english_correctness": {
+          "Python": 48.6,
+          "Java": 27.5,
+          "C++": 22.0,
+          "C#": 18.4,
+          "TypeScript": 20.0,
+          "JavaScript": 38.0,
+          "PHP": 34.0,
+          "Shell": 20.0
+        },
+        "english_instruction": {
+          "Python": 27.6,
+          "Java": 7.8,
+          "C++": 2.0,
+          "C#": 2.9,
+          "TypeScript": 25.0,
+          "JavaScript": 31.0,
+          "PHP": 12.0,
+          "Shell": 35.0
+        },
+        "chinese_correctness": {
+          "Python": 47.6,
+          "Java": 26.5,
+          "C++": 22.0,
+          "C#": 19.4,
+          "TypeScript": 24.0,
+          "JavaScript": 41.0,
+          "PHP": 39.0,
+          "Shell": 19.0
+        },
+        "chinese_instruction": {
+          "Python": 29.5,
+          "Java": 8.8,
+          "C++": 3.0,
+          "C#": 2.9,
+          "TypeScript": 32.0,
+          "JavaScript": 30.0,
+          "PHP": 15.0,
+          "Shell": 36.0
+        }
+      }
+    },
+    "Qwen3-14B": {
+      "source_label": "Qwen3 14B",
+      "scores": {
+        "english_correctness": {
+          "Python": 36.2,
+          "Java": 25.5,
+          "C++": 20.0,
+          "C#": 8.7,
+          "TypeScript": 23.0,
+          "JavaScript": 37.0,
+          "PHP": 36.0,
+          "Shell": 18.0
+        },
+        "english_instruction": {
+          "Python": 33.3,
+          "Java": 8.8,
+          "C++": 3.0,
+          "C#": 3.9,
+          "TypeScript": 22.0,
+          "JavaScript": 31.0,
+          "PHP": 20.0,
+          "Shell": 53.0
+        },
+        "chinese_correctness": {
+          "Python": 39.0,
+          "Java": 19.6,
+          "C++": 17.0,
+          "C#": 10.7,
+          "TypeScript": 23.0,
+          "JavaScript": 41.0,
+          "PHP": 40.0,
+          "Shell": 18.0
+        },
+        "chinese_instruction": {
+          "Python": 32.4,
+          "Java": 8.8,
+          "C++": 3.0,
+          "C#": 4.9,
+          "TypeScript": 31.0,
+          "JavaScript": 33.0,
+          "PHP": 23.0,
+          "Shell": 53.0
+        }
+      }
+    },
+    "CodeLlama-34B-Instruct": {
+      "source_label": "CodeLlama 34B",
+      "scores": {
+        "english_correctness": {
+          "Python": 16.2,
+          "Java": 9.8,
+          "C++": 5.0,
+          "C#": 8.7,
+          "TypeScript": 8.0,
+          "JavaScript": 23.0,
+          "PHP": 16.0,
+          "Shell": 9.0
+        },
+        "english_instruction": {
+          "Python": 21.9,
+          "Java": 4.9,
+          "C++": 3.0,
+          "C#": 2.9,
+          "TypeScript": 9.0,
+          "JavaScript": 2.0,
+          "PHP": 6.0,
+          "Shell": 17.0
+        },
+        "chinese_correctness": {
+          "Python": 4.8,
+          "Java": 5.9,
+          "C++": 15.0,
+          "C#": 12.6,
+          "TypeScript": 10.0,
+          "JavaScript": 18.0,
+          "PHP": 17.0,
+          "Shell": 3.0
+        },
+        "chinese_instruction": {
+          "Python": 15.2,
+          "Java": 2.0,
+          "C++": 3.0,
+          "C#": 1.9,
+          "TypeScript": 6.0,
+          "JavaScript": 0.0,
+          "PHP": 10.0,
+          "Shell": 22.0
+        }
+      }
+    },
+    "DeepSeek-Coder-33B-Instruct": {
+      "source_label": "Deepseek-Coder 33B",
+      "scores": {
+        "english_correctness": {
+          "Python": 41.9,
+          "Java": 33.3,
+          "C++": 22.0,
+          "C#": 7.8,
+          "TypeScript": 24.0,
+          "JavaScript": 33.0,
+          "PHP": 37.0,
+          "Shell": 19.0
+        },
+        "english_instruction": {
+          "Python": 22.9,
+          "Java": 4.9,
+          "C++": 4.0,
+          "C#": 1.9,
+          "TypeScript": 20.0,
+          "JavaScript": 18.0,
+          "PHP": 7.0,
+          "Shell": 20.0
+        },
+        "chinese_correctness": {
+          "Python": 44.8,
+          "Java": 26.5,
+          "C++": 24.0,
+          "C#": 7.8,
+          "TypeScript": 21.0,
+          "JavaScript": 35.0,
+          "PHP": 30.0,
+          "Shell": 20.0
+        },
+        "chinese_instruction": {
+          "Python": 21.0,
+          "Java": 4.9,
+          "C++": 7.0,
+          "C#": 1.9,
+          "TypeScript": 18.0,
+          "JavaScript": 20.0,
+          "PHP": 14.0,
+          "Shell": 26.0
+        }
+      }
+    },
+    "Qwen2.5-Coder-32B": {
+      "source_label": "Qwen2.5-Coder 32B",
+      "scores": {
+        "english_correctness": {
+          "Python": 42.9,
+          "Java": 22.5,
+          "C++": 20.0,
+          "C#": 8.7,
+          "TypeScript": 29.0,
+          "JavaScript": 47.0,
+          "PHP": 42.0,
+          "Shell": 27.0
+        },
+        "english_instruction": {
+          "Python": 33.3,
+          "Java": 6.9,
+          "C++": 6.0,
+          "C#": 4.9,
+          "TypeScript": 30.0,
+          "JavaScript": 30.0,
+          "PHP": 16.0,
+          "Shell": 39.0
+        },
+        "chinese_correctness": {
+          "Python": 43.8,
+          "Java": 28.4,
+          "C++": 19.0,
+          "C#": 12.6,
+          "TypeScript": 25.0,
+          "JavaScript": 41.0,
+          "PHP": 44.0,
+          "Shell": 23.0
+        },
+        "chinese_instruction": {
+          "Python": 34.3,
+          "Java": 8.8,
+          "C++": 2.0,
+          "C#": 5.8,
+          "TypeScript": 29.0,
+          "JavaScript": 34.0,
+          "PHP": 24.0,
+          "Shell": 38.0
+        }
+      }
+    },
+    "Qwen3-32B": {
+      "source_label": "Qwen3 32B",
+      "scores": {
+        "english_correctness": {
+          "Python": 49.5,
+          "Java": 25.5,
+          "C++": 17.0,
+          "C#": 10.7,
+          "TypeScript": 20.0,
+          "JavaScript": 38.0,
+          "PHP": 41.0,
+          "Shell": 22.0
+        },
+        "english_instruction": {
+          "Python": 33.3,
+          "Java": 8.8,
+          "C++": 7.0,
+          "C#": 1.9,
+          "TypeScript": 29.0,
+          "JavaScript": 34.0,
+          "PHP": 28.0,
+          "Shell": 52.0
+        },
+        "chinese_correctness": {
+          "Python": 42.9,
+          "Java": 24.5,
+          "C++": 17.0,
+          "C#": 9.7,
+          "TypeScript": 27.0,
+          "JavaScript": 38.0,
+          "PHP": 40.0,
+          "Shell": 19.0
+        },
+        "chinese_instruction": {
+          "Python": 41.0,
+          "Java": 7.8,
+          "C++": 7.0,
+          "C#": 3.9,
+          "TypeScript": 25.0,
+          "JavaScript": 31.0,
+          "PHP": 23.0,
+          "Shell": 51.0
+        }
+      }
+    },
+    "Qwen3-think-0.6B": {
+      "source_label": "Qwen3-think 0.6B",
+      "scores": {
+        "english_correctness": {
+          "Python": 13.3,
+          "Java": 2.0,
+          "C++": 1.0,
+          "C#": 0.0,
+          "TypeScript": 2.0,
+          "JavaScript": 8.0,
+          "PHP": 13.0,
+          "Shell": 0.0
+        },
+        "english_instruction": {
+          "Python": 15.2,
+          "Java": 2.0,
+          "C++": 5.0,
+          "C#": 1.9,
+          "TypeScript": 6.0,
+          "JavaScript": 3.0,
+          "PHP": 0.0,
+          "Shell": 6.0
+        },
+        "chinese_correctness": {
+          "Python": 10.5,
+          "Java": 2.9,
+          "C++": 0.0,
+          "C#": 0.0,
+          "TypeScript": 1.0,
+          "JavaScript": 9.0,
+          "PHP": 6.0,
+          "Shell": 0.0
+        },
+        "chinese_instruction": {
+          "Python": 10.5,
+          "Java": 3.9,
+          "C++": 2.0,
+          "C#": 1.9,
+          "TypeScript": 10.0,
+          "JavaScript": 8.0,
+          "PHP": 1.0,
+          "Shell": 7.0
+        }
+      }
+    },
+    "Qwen3-think-1.7B": {
+      "source_label": "Qwen3-think 1.7B",
+      "scores": {
+        "english_correctness": {
+          "Python": 25.7,
+          "Java": 3.9,
+          "C++": 3.0,
+          "C#": 0.0,
+          "TypeScript": 10.0,
+          "JavaScript": 22.0,
+          "PHP": 28.0,
+          "Shell": 7.0
+        },
+        "english_instruction": {
+          "Python": 21.0,
+          "Java": 2.9,
+          "C++": 2.0,
+          "C#": 2.9,
+          "TypeScript": 11.0,
+          "JavaScript": 17.0,
+          "PHP": 2.0,
+          "Shell": 13.0
+        },
+        "chinese_correctness": {
+          "Python": 21.0,
+          "Java": 2.9,
+          "C++": 0.0,
+          "C#": 0.0,
+          "TypeScript": 10.0,
+          "JavaScript": 14.0,
+          "PHP": 21.0,
+          "Shell": 3.0
+        },
+        "chinese_instruction": {
+          "Python": 14.3,
+          "Java": 2.9,
+          "C++": 0.0,
+          "C#": 1.0,
+          "TypeScript": 1.0,
+          "JavaScript": 3.0,
+          "PHP": 2.0,
+          "Shell": 3.0
+        }
+      }
+    },
+    "Qwen3-think-4B": {
+      "source_label": "Qwen3-think 4B",
+      "scores": {
+        "english_correctness": {
+          "Python": 34.3,
+          "Java": 12.7,
+          "C++": 6.0,
+          "C#": 1.0,
+          "TypeScript": 12.0,
+          "JavaScript": 29.0,
+          "PHP": 25.0,
+          "Shell": 13.0
+        },
+        "english_instruction": {
+          "Python": 21.9,
+          "Java": 4.9,
+          "C++": 4.0,
+          "C#": 3.9,
+          "TypeScript": 12.0,
+          "JavaScript": 20.0,
+          "PHP": 2.0,
+          "Shell": 17.0
+        },
+        "chinese_correctness": {
+          "Python": 24.8,
+          "Java": 4.9,
+          "C++": 1.0,
+          "C#": 0.0,
+          "TypeScript": 9.0,
+          "JavaScript": 16.0,
+          "PHP": 21.0,
+          "Shell": 14.0
+        },
+        "chinese_instruction": {
+          "Python": 7.6,
+          "Java": 1.0,
+          "C++": 1.0,
+          "C#": 0.0,
+          "TypeScript": 5.0,
+          "JavaScript": 3.0,
+          "PHP": 1.0,
+          "Shell": 6.0
+        }
+      }
+    },
+    "Qwen3-think-14B": {
+      "source_label": "Qwen3-think 14B",
+      "scores": {
+        "english_correctness": {
+          "Python": 51.4,
+          "Java": 22.5,
+          "C++": 16.0,
+          "C#": 1.9,
+          "TypeScript": 30.0,
+          "JavaScript": 48.0,
+          "PHP": 43.0,
+          "Shell": 24.0
+        },
+        "english_instruction": {
+          "Python": 31.4,
+          "Java": 15.7,
+          "C++": 5.0,
+          "C#": 4.9,
+          "TypeScript": 24.0,
+          "JavaScript": 33.0,
+          "PHP": 4.0,
+          "Shell": 17.0
+        },
+        "chinese_correctness": {
+          "Python": 49.5,
+          "Java": 16.7,
+          "C++": 10.0,
+          "C#": 2.9,
+          "TypeScript": 23.0,
+          "JavaScript": 34.0,
+          "PHP": 37.0,
+          "Shell": 22.0
+        },
+        "chinese_instruction": {
+          "Python": 26.7,
+          "Java": 2.9,
+          "C++": 1.0,
+          "C#": 1.0,
+          "TypeScript": 8.0,
+          "JavaScript": 6.0,
+          "PHP": 1.0,
+          "Shell": 10.0
+        }
+      }
+    },
+    "Qwen3-think-32B": {
+      "source_label": "Qwen3-think 32B",
+      "scores": {
+        "english_correctness": {
+          "Python": 49.5,
+          "Java": 25.5,
+          "C++": 17.0,
+          "C#": 10.7,
+          "TypeScript": 20.0,
+          "JavaScript": 38.0,
+          "PHP": 41.0,
+          "Shell": 22.0
+        },
+        "english_instruction": {
+          "Python": 33.3,
+          "Java": 8.8,
+          "C++": 7.0,
+          "C#": 1.9,
+          "TypeScript": 29.0,
+          "JavaScript": 34.0,
+          "PHP": 28.0,
+          "Shell": 52.0
+        },
+        "chinese_correctness": {
+          "Python": 54.3,
+          "Java": 30.4,
+          "C++": 24.0,
+          "C#": 7.8,
+          "TypeScript": 26.0,
+          "JavaScript": 42.0,
+          "PHP": 50.0,
+          "Shell": 30.0
+        },
+        "chinese_instruction": {
+          "Python": 19.0,
+          "Java": 5.9,
+          "C++": 2.0,
+          "C#": 1.9,
+          "TypeScript": 2.0,
+          "JavaScript": 7.0,
+          "PHP": 1.0,
+          "Shell": 6.0
+        }
+      }
+    },
+    "Qwen3-30B-A3B-Think": {
+      "source_label": "Qwen3-think 3/30B",
+      "scores": {
+        "english_correctness": {
+          "Python": 35.2,
+          "Java": 16.7,
+          "C++": 14.0,
+          "C#": 1.9,
+          "TypeScript": 32.0,
+          "JavaScript": 45.0,
+          "PHP": 46.0,
+          "Shell": 34.0
+        },
+        "english_instruction": {
+          "Python": 33.3,
+          "Java": 11.8,
+          "C++": 6.0,
+          "C#": 4.9,
+          "TypeScript": 30.0,
+          "JavaScript": 33.0,
+          "PHP": 4.0,
+          "Shell": 22.0
+        },
+        "chinese_correctness": {
+          "Python": 42.9,
+          "Java": 16.7,
+          "C++": 12.0,
+          "C#": 2.9,
+          "TypeScript": 21.0,
+          "JavaScript": 41.0,
+          "PHP": 40.0,
+          "Shell": 22.0
+        },
+        "chinese_instruction": {
+          "Python": 21.0,
+          "Java": 2.9,
+          "C++": 0.0,
+          "C#": 2.9,
+          "TypeScript": 4.0,
+          "JavaScript": 10.0,
+          "PHP": 1.0,
+          "Shell": 7.0
+        }
+      }
+    }
+  }
+}

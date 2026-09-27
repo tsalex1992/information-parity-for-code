@@ -1,0 +1,186 @@
+{
+  "source": {
+    "paper": "CRUXEval-X: A Benchmark for Multilingual Code Reasoning, Understanding and Execution",
+    "arxiv": "2408.13001",
+    "url": "https://arxiv.org/abs/2408.13001",
+    "github": "https://github.com/CRUXEVAL-X/cruxeval-x",
+    "leaderboard": "https://cruxeval-x.github.io/leaderboard.html",
+    "note": "Scores extracted from Table 2 of the paper. GitHub repo contains benchmark datasets but no aggregated pass@1 CSV/JSON."
+  },
+  "languages": {
+    "cs": "C#",
+    "cpp": "C++",
+    "d": "D",
+    "go": "Go",
+    "java": "Java",
+    "js": "JavaScript",
+    "jl": "Julia",
+    "lua": "Lua",
+    "pl": "Perl",
+    "php": "PHP",
+    "py": "Python",
+    "r": "R",
+    "rkt": "Racket",
+    "rb": "Ruby",
+    "rs": "Rust",
+    "scala": "Scala",
+    "sh": "Shell",
+    "swift": "Swift",
+    "ts": "TypeScript"
+  },
+  "language_list": ["cs", "cpp", "d", "go", "java", "js", "jl", "lua", "pl", "php", "py", "r", "rkt", "rb", "rs", "scala", "sh", "swift", "ts"],
+  "subtasks": {
+    "input_prediction": "Given output, predict input (Input Reasoning in paper)",
+    "output_prediction": "Given input, predict output (Output Reasoning in paper)"
+  },
+  "models": [
+    {
+      "name": "GPT-4o",
+      "size": null,
+      "input_prediction": {"cs": 70.2, "cpp": 64.6, "d": 71.6, "go": 75.4, "java": 69.8, "js": 73.2, "jl": 67.0, "lua": 73.0, "pl": 70.2, "php": 74.8, "py": 70.6, "r": 74.4, "rkt": 67.4, "rb": 72.0, "rs": 73.6, "scala": 65.4, "sh": 70.6, "swift": 74.2, "ts": 74.0},
+      "output_prediction": {"cs": 75.0, "cpp": 74.8, "d": 71.4, "go": 77.0, "java": 73.2, "js": 77.6, "jl": 73.6, "lua": 74.8, "pl": 74.0, "php": 75.4, "py": 75.4, "r": 72.0, "rkt": 70.8, "rb": 74.0, "rs": 74.4, "scala": 71.8, "sh": 71.6, "swift": 76.0, "ts": 76.4}
+    },
+    {
+      "name": "GPT-4o-mini",
+      "size": null,
+      "input_prediction": {"cs": 58.8, "cpp": 52.2, "d": 60.6, "go": 62.0, "java": 57.2, "js": 59.6, "jl": 56.2, "lua": 63.4, "pl": 57.4, "php": 61.0, "py": 59.6, "r": 60.4, "rkt": 51.2, "rb": 61.6, "rs": 61.2, "scala": 52.6, "sh": 57.2, "swift": 63.4, "ts": 61.2},
+      "output_prediction": {"cs": 63.0, "cpp": 63.0, "d": 61.4, "go": 63.4, "java": 54.0, "js": 61.8, "jl": 57.8, "lua": 60.0, "pl": 57.4, "php": 64.2, "py": 61.6, "r": 59.6, "rkt": 56.6, "rb": 61.2, "rs": 61.8, "scala": 61.2, "sh": 56.2, "swift": 63.0, "ts": 61.2}
+    },
+    {
+      "name": "GPT-3.5 Turbo",
+      "size": null,
+      "input_prediction": {"cs": 52.2, "cpp": 39.2, "d": 50.2, "go": 53.4, "java": 55.4, "js": 50.0, "jl": 47.0, "lua": 53.2, "pl": 47.6, "php": 52.2, "py": 51.6, "r": 48.6, "rkt": 45.4, "rb": 49.6, "rs": 53.0, "scala": 54.2, "sh": 47.6, "swift": 58.2, "ts": 48.4},
+      "output_prediction": {"cs": 54.2, "cpp": 43.2, "d": 56.0, "go": 53.2, "java": 43.6, "js": 56.2, "jl": 54.2, "lua": 54.6, "pl": 51.8, "php": 55.2, "py": 57.2, "r": 49.4, "rkt": 48.0, "rb": 56.4, "rs": 54.6, "scala": 56.4, "sh": 51.0, "swift": 57.8, "ts": 53.6}
+    },
+    {
+      "name": "Deepseekcoder-V2",
+      "size": "236B",
+      "input_prediction": {"cs": 63.8, "cpp": 57.0, "d": 66.6, "go": 64.0, "java": 64.8, "js": 67.0, "jl": 58.4, "lua": 62.0, "pl": 61.4, "php": 64.2, "py": 64.0, "r": 65.8, "rkt": 58.0, "rb": 63.2, "rs": 63.6, "scala": 58.2, "sh": 62.4, "swift": 62.6, "ts": 66.6},
+      "output_prediction": {"cs": 66.6, "cpp": 66.2, "d": 63.4, "go": 68.0, "java": 67.6, "js": 65.4, "jl": 64.8, "lua": 63.6, "pl": 63.0, "php": 67.4, "py": 66.8, "r": 63.0, "rkt": 62.2, "rb": 65.2, "rs": 65.8, "scala": 63.2, "sh": 58.8, "swift": 67.8, "ts": 66.4}
+    },
+    {
+      "name": "Qwen2-Instruct",
+      "size": "72B",
+      "input_prediction": {"cs": 52.0, "cpp": 54.2, "d": 49.6, "go": 55.4, "java": 50.0, "js": 51.6, "jl": 51.0, "lua": 51.2, "pl": 47.8, "php": 55.2, "py": 52.4, "r": 53.2, "rkt": 47.8, "rb": 54.4, "rs": 57.2, "scala": 50.6, "sh": 52.4, "swift": 51.6, "ts": 52.0},
+      "output_prediction": {"cs": 51.2, "cpp": 50.2, "d": 51.6, "go": 53.6, "java": 38.2, "js": 52.0, "jl": 51.0, "lua": 49.0, "pl": 45.8, "php": 50.8, "py": 51.2, "r": 45.0, "rkt": 46.8, "rb": 50.8, "rs": 51.0, "scala": 51.0, "sh": 45.6, "swift": 50.4, "ts": 53.2}
+    },
+    {
+      "name": "CodeLlama-Python",
+      "size": "34B",
+      "input_prediction": {"cs": 38.8, "cpp": 40.0, "d": 39.2, "go": 39.0, "java": 41.4, "js": 45.8, "jl": 44.8, "lua": 45.0, "pl": 43.2, "php": 48.0, "py": 46.8, "r": 42.2, "rkt": 38.8, "rb": 44.0, "rs": 44.2, "scala": 43.0, "sh": 44.6, "swift": 45.0, "ts": 44.0},
+      "output_prediction": {"cs": 41.4, "cpp": 44.8, "d": 45.6, "go": 41.8, "java": 41.4, "js": 45.4, "jl": 45.2, "lua": 42.8, "pl": 43.6, "php": 43.8, "py": 43.8, "r": 42.4, "rkt": 38.6, "rb": 42.8, "rs": 46.6, "scala": 43.8, "sh": 42.0, "swift": 44.4, "ts": 44.8}
+    },
+    {
+      "name": "CodeLlama-Instruct",
+      "size": "34B",
+      "input_prediction": {"cs": 44.6, "cpp": 48.4, "d": 43.8, "go": 46.0, "java": 44.4, "js": 52.6, "jl": 50.4, "lua": 49.4, "pl": 46.0, "php": 52.0, "py": 51.2, "r": 48.4, "rkt": 42.4, "rb": 48.2, "rs": 48.6, "scala": 48.0, "sh": 46.2, "swift": 49.4, "ts": 53.2},
+      "output_prediction": {"cs": 44.4, "cpp": 46.2, "d": 45.8, "go": 46.8, "java": 40.6, "js": 47.4, "jl": 45.6, "lua": 42.8, "pl": 44.0, "php": 44.8, "py": 44.0, "r": 40.2, "rkt": 38.2, "rb": 44.2, "rs": 46.4, "scala": 43.8, "sh": 40.6, "swift": 45.2, "ts": 45.0}
+    },
+    {
+      "name": "CodeLlama",
+      "size": "34B",
+      "input_prediction": {"cs": 40.4, "cpp": 44.6, "d": 45.6, "go": 41.2, "java": 39.0, "js": 50.0, "jl": 49.0, "lua": 47.0, "pl": 46.6, "php": 48.8, "py": 49.8, "r": 47.6, "rkt": 39.8, "rb": 46.6, "rs": 46.8, "scala": 44.6, "sh": 44.4, "swift": 50.0, "ts": 48.6},
+      "output_prediction": {"cs": 44.6, "cpp": 47.8, "d": 44.2, "go": 45.2, "java": 38.4, "js": 47.0, "jl": 45.8, "lua": 42.8, "pl": 43.8, "php": 46.4, "py": 46.4, "r": 38.8, "rkt": 38.4, "rb": 45.4, "rs": 47.2, "scala": 47.4, "sh": 43.8, "swift": 47.6, "ts": 47.4}
+    },
+    {
+      "name": "WizardCoder-V1.1",
+      "size": "33B",
+      "input_prediction": {"cs": 44.8, "cpp": 25.4, "d": 46.4, "go": 47.6, "java": 48.4, "js": 45.6, "jl": 49.2, "lua": 48.8, "pl": 44.6, "php": 50.0, "py": 50.0, "r": 45.0, "rkt": 42.4, "rb": 49.2, "rs": 48.2, "scala": 48.2, "sh": 45.4, "swift": 51.0, "ts": 46.4},
+      "output_prediction": {"cs": 47.0, "cpp": 46.8, "d": 45.8, "go": 44.2, "java": 50.8, "js": 50.0, "jl": 47.0, "lua": 46.0, "pl": 45.2, "php": 51.4, "py": 49.6, "r": 44.0, "rkt": 42.4, "rb": 48.2, "rs": 47.8, "scala": 45.0, "sh": 44.4, "swift": 48.0, "ts": 49.8}
+    },
+    {
+      "name": "Deepseekcoder-instruct",
+      "size": "33B",
+      "input_prediction": {"cs": 46.0, "cpp": 43.6, "d": 49.8, "go": 49.0, "java": 46.8, "js": 48.8, "jl": 47.0, "lua": 50.0, "pl": 46.8, "php": 52.0, "py": 51.8, "r": 48.2, "rkt": 41.6, "rb": 52.0, "rs": 48.4, "scala": 47.0, "sh": 48.2, "swift": 52.2, "ts": 49.6},
+      "output_prediction": {"cs": 52.0, "cpp": 51.4, "d": 49.0, "go": 48.8, "java": 53.2, "js": 55.0, "jl": 50.4, "lua": 50.4, "pl": 50.0, "php": 53.0, "py": 52.2, "r": 48.2, "rkt": 46.6, "rb": 52.8, "rs": 50.6, "scala": 48.0, "sh": 49.4, "swift": 52.8, "ts": 53.6}
+    },
+    {
+      "name": "Deepseekcoder-base",
+      "size": "33B",
+      "input_prediction": {"cs": 41.2, "cpp": 42.8, "d": 43.2, "go": 45.6, "java": 43.8, "js": 46.0, "jl": 47.6, "lua": 47.4, "pl": 47.2, "php": 48.6, "py": 49.2, "r": 50.6, "rkt": 42.8, "rb": 47.4, "rs": 46.8, "scala": 44.0, "sh": 46.4, "swift": 48.2, "ts": 45.0},
+      "output_prediction": {"cs": 48.2, "cpp": 50.0, "d": 46.0, "go": 48.6, "java": 49.2, "js": 51.4, "jl": 46.8, "lua": 48.0, "pl": 48.4, "php": 52.0, "py": 49.8, "r": 45.2, "rkt": 46.4, "rb": 49.0, "rs": 46.2, "scala": 47.6, "sh": 46.0, "swift": 49.2, "ts": 51.2}
+    },
+    {
+      "name": "Starcoder2",
+      "size": "15B",
+      "input_prediction": {"cs": 41.4, "cpp": 43.8, "d": 51.6, "go": 45.2, "java": 42.6, "js": 44.0, "jl": 48.2, "lua": 44.6, "pl": 44.8, "php": 49.8, "py": 46.6, "r": 45.8, "rkt": 45.0, "rb": 49.0, "rs": 46.6, "scala": 37.0, "sh": 47.4, "swift": 52.2, "ts": 46.2},
+      "output_prediction": {"cs": 46.0, "cpp": 47.4, "d": 47.2, "go": 49.0, "java": 48.4, "js": 50.0, "jl": 49.2, "lua": 44.8, "pl": 49.4, "php": 48.4, "py": 48.4, "r": 47.2, "rkt": 45.0, "rb": 51.0, "rs": 48.8, "scala": 45.2, "sh": 45.8, "swift": 49.6, "ts": 48.6}
+    },
+    {
+      "name": "WizardCoder-V1.0",
+      "size": "15B",
+      "input_prediction": {"cs": 29.2, "cpp": 30.0, "d": 30.6, "go": 28.6, "java": 29.6, "js": 33.0, "jl": 34.8, "lua": 33.6, "pl": 36.2, "php": 36.8, "py": 33.2, "r": 33.4, "rkt": 36.4, "rb": 33.6, "rs": 33.0, "scala": 29.0, "sh": 35.0, "swift": 34.0, "ts": 32.4},
+      "output_prediction": {"cs": 25.2, "cpp": 30.0, "d": 30.6, "go": 33.2, "java": 26.8, "js": 33.6, "jl": 30.2, "lua": 30.2, "pl": 31.0, "php": 33.0, "py": 34.0, "r": 31.6, "rkt": 29.6, "rb": 32.8, "rs": 31.2, "scala": 31.2, "sh": 29.8, "swift": 34.2, "ts": 34.0}
+    },
+    {
+      "name": "Starcoder",
+      "size": "15B",
+      "input_prediction": {"cs": 28.2, "cpp": 30.0, "d": 33.0, "go": 33.2, "java": 33.4, "js": 35.2, "jl": 34.4, "lua": 31.6, "pl": 34.0, "php": 36.4, "py": 34.8, "r": 33.4, "rkt": 36.6, "rb": 35.0, "rs": 34.8, "scala": 27.4, "sh": 37.0, "swift": 30.8, "ts": 33.2},
+      "output_prediction": {"cs": 20.4, "cpp": 31.6, "d": 31.8, "go": 31.0, "java": 18.4, "js": 33.4, "jl": 32.2, "lua": 31.8, "pl": 29.8, "php": 32.6, "py": 32.6, "r": 30.0, "rkt": 29.2, "rb": 33.4, "rs": 32.6, "scala": 30.0, "sh": 30.2, "swift": 33.0, "ts": 33.0}
+    },
+    {
+      "name": "phi-3-instruct",
+      "size": "14B",
+      "input_prediction": {"cs": 31.8, "cpp": 26.0, "d": 38.8, "go": 36.4, "java": 37.2, "js": 42.4, "jl": 36.2, "lua": 37.2, "pl": 35.6, "php": 41.2, "py": 43.4, "r": 39.2, "rkt": 24.4, "rb": 36.0, "rs": 36.8, "scala": 38.0, "sh": 33.6, "swift": 41.2, "ts": 42.8},
+      "output_prediction": {"cs": 34.2, "cpp": 37.6, "d": 39.0, "go": 31.0, "java": 34.2, "js": 41.6, "jl": 41.2, "lua": 34.4, "pl": 35.8, "php": 37.8, "py": 42.4, "r": 36.6, "rkt": 24.6, "rb": 42.2, "rs": 37.4, "scala": 36.2, "sh": 37.2, "swift": 41.4, "ts": 43.0}
+    },
+    {
+      "name": "Llama-3-Instruct",
+      "size": "8B",
+      "input_prediction": {"cs": 37.0, "cpp": 36.4, "d": 35.0, "go": 38.6, "java": 36.2, "js": 38.4, "jl": 39.6, "lua": 40.0, "pl": 36.2, "php": 36.6, "py": 38.4, "r": 42.2, "rkt": 24.2, "rb": 35.8, "rs": 37.6, "scala": 38.0, "sh": 31.6, "swift": 42.2, "ts": 38.2},
+      "output_prediction": {"cs": 32.0, "cpp": 30.8, "d": 31.2, "go": 31.4, "java": 25.0, "js": 35.0, "jl": 31.4, "lua": 34.0, "pl": 29.6, "php": 27.0, "py": 33.6, "r": 27.2, "rkt": 28.0, "rb": 31.8, "rs": 34.4, "scala": 33.8, "sh": 32.0, "swift": 36.4, "ts": 33.8}
+    },
+    {
+      "name": "CodeQwen1.5-Chat",
+      "size": "7B",
+      "input_prediction": {"cs": 42.8, "cpp": 42.0, "d": 43.0, "go": 46.4, "java": 44.6, "js": 43.8, "jl": 42.2, "lua": 42.8, "pl": 41.6, "php": 44.8, "py": 43.0, "r": 43.4, "rkt": 38.2, "rb": 43.6, "rs": 42.0, "scala": 39.4, "sh": 46.6, "swift": 45.8, "ts": 43.6},
+      "output_prediction": {"cs": 37.8, "cpp": 40.2, "d": 40.2, "go": 40.6, "java": 35.4, "js": 43.6, "jl": 42.6, "lua": 40.4, "pl": 39.6, "php": 43.0, "py": 41.4, "r": 38.2, "rkt": 39.0, "rb": 44.6, "rs": 42.0, "scala": 35.0, "sh": 38.2, "swift": 43.8, "ts": 42.2}
+    },
+    {
+      "name": "CodeLlama-Instruct",
+      "size": "7B",
+      "input_prediction": {"cs": 38.6, "cpp": 36.0, "d": 38.4, "go": 38.4, "java": 38.2, "js": 39.6, "jl": 42.2, "lua": 43.4, "pl": 36.4, "php": 40.4, "py": 41.0, "r": 41.0, "rkt": 38.8, "rb": 41.6, "rs": 37.6, "scala": 42.6, "sh": 39.6, "swift": 40.2, "ts": 41.0},
+      "output_prediction": {"cs": 32.2, "cpp": 35.6, "d": 34.4, "go": 35.0, "java": 24.4, "js": 38.2, "jl": 35.2, "lua": 32.2, "pl": 34.2, "php": 36.0, "py": 35.4, "r": 32.0, "rkt": 29.6, "rb": 37.0, "rs": 37.4, "scala": 33.0, "sh": 33.0, "swift": 34.6, "ts": 38.8}
+    },
+    {
+      "name": "CodeLlama-hf",
+      "size": "7B",
+      "input_prediction": {"cs": 36.4, "cpp": 36.2, "d": 36.8, "go": 34.6, "java": 36.4, "js": 36.6, "jl": 40.2, "lua": 39.6, "pl": 36.0, "php": 39.4, "py": 40.2, "r": 40.0, "rkt": 36.6, "rb": 39.2, "rs": 35.4, "scala": 37.8, "sh": 36.8, "swift": 39.2, "ts": 38.8},
+      "output_prediction": {"cs": 32.6, "cpp": 34.4, "d": 33.8, "go": 33.4, "java": 28.4, "js": 38.0, "jl": 35.2, "lua": 34.4, "pl": 35.2, "php": 38.0, "py": 34.4, "r": 32.6, "rkt": 30.8, "rb": 34.8, "rs": 36.8, "scala": 33.4, "sh": 31.0, "swift": 35.0, "ts": 38.2}
+    },
+    {
+      "name": "Deepseekcoder-instruct",
+      "size": "6.7B",
+      "input_prediction": {"cs": 35.0, "cpp": 37.0, "d": 35.6, "go": 40.4, "java": 35.0, "js": 36.6, "jl": 39.2, "lua": 38.8, "pl": 39.4, "php": 42.2, "py": 38.2, "r": 42.0, "rkt": 37.2, "rb": 40.2, "rs": 37.4, "scala": 36.8, "sh": 42.8, "swift": 40.8, "ts": 34.2},
+      "output_prediction": {"cs": 34.8, "cpp": 41.8, "d": 40.4, "go": 39.4, "java": 32.8, "js": 47.6, "jl": 42.6, "lua": 38.8, "pl": 42.0, "php": 43.8, "py": 43.6, "r": 40.8, "rkt": 39.2, "rb": 43.2, "rs": 41.8, "scala": 40.6, "sh": 37.8, "swift": 43.2, "ts": 44.0}
+    },
+    {
+      "name": "Deepseekcoder-base",
+      "size": "6.7B",
+      "input_prediction": {"cs": 38.8, "cpp": 42.4, "d": 41.2, "go": 43.2, "java": 40.4, "js": 43.6, "jl": 42.6, "lua": 42.8, "pl": 41.6, "php": 46.4, "py": 41.4, "r": 46.2, "rkt": 43.0, "rb": 44.6, "rs": 41.6, "scala": 40.8, "sh": 44.8, "swift": 43.4, "ts": 41.8},
+      "output_prediction": {"cs": 41.2, "cpp": 46.2, "d": 43.2, "go": 42.8, "java": 42.6, "js": 44.8, "jl": 46.0, "lua": 41.0, "pl": 40.4, "php": 41.8, "py": 44.8, "r": 42.8, "rkt": 43.0, "rb": 42.6, "rs": 42.0, "scala": 43.2, "sh": 40.6, "swift": 47.6, "ts": 45.4}
+    },
+    {
+      "name": "CodeGen-multi",
+      "size": "6B",
+      "input_prediction": {"cs": 28.8, "cpp": 25.4, "d": 6.2, "go": 25.6, "java": 36.2, "js": 25.2, "jl": 17.4, "lua": 24.4, "pl": 38.4, "php": 22.8, "py": 22.6, "r": 27.2, "rkt": 16.2, "rb": 6.4, "rs": 18.8, "scala": 31.0, "sh": 48.6, "swift": 32.4, "ts": 25.2},
+      "output_prediction": {"cs": 21.4, "cpp": 23.6, "d": 25.0, "go": 26.4, "java": 21.6, "js": 22.8, "jl": 22.8, "lua": 23.8, "pl": 20.4, "php": 25.2, "py": 24.8, "r": 23.4, "rkt": 17.8, "rb": 24.0, "rs": 25.2, "scala": 22.0, "sh": 22.2, "swift": 25.0, "ts": 21.4}
+    },
+    {
+      "name": "phi-1_5",
+      "size": "1.3B",
+      "input_prediction": {"cs": 29.2, "cpp": 16.0, "d": 13.2, "go": 25.8, "java": 26.8, "js": 9.8, "jl": 30.4, "lua": 26.6, "pl": 17.8, "php": 26.6, "py": 25.8, "r": 8.4, "rkt": 6.6, "rb": 1.4, "rs": 25.2, "scala": 30.4, "sh": 34.4, "swift": 26.6, "ts": 30.8},
+      "output_prediction": {"cs": 16.0, "cpp": 26.0, "d": 24.8, "go": 22.6, "java": 15.8, "js": 23.0, "jl": 23.6, "lua": 21.2, "pl": 22.0, "php": 22.2, "py": 25.6, "r": 21.8, "rkt": 16.8, "rb": 19.6, "rs": 22.0, "scala": 21.6, "sh": 17.6, "swift": 25.6, "ts": 25.2}
+    },
+    {
+      "name": "phi-1",
+      "size": "1.3B",
+      "input_prediction": {"cs": 0.2, "cpp": 7.0, "d": 9.6, "go": 3.6, "java": 2.8, "js": 17.0, "jl": 19.0, "lua": 17.4, "pl": 23.6, "php": 9.2, "py": 11.8, "r": 9.4, "rkt": 11.2, "rb": 6.8, "rs": 5.4, "scala": 1.8, "sh": 19.8, "swift": 14.0, "ts": 14.0},
+      "output_prediction": {"cs": 5.8, "cpp": 9.0, "d": 13.2, "go": 14.8, "java": 4.6, "js": 20.8, "jl": 19.2, "lua": 15.8, "pl": 15.6, "php": 18.6, "py": 22.4, "r": 17.6, "rkt": 10.4, "rb": 18.0, "rs": 16.4, "scala": 11.0, "sh": 16.4, "swift": 19.2, "ts": 19.0}
+    }
+  ],
+  "averages": {
+    "input_prediction": {"cs": 40.4, "cpp": 38.3, "d": 40.8, "go": 42.4, "java": 41.7, "js": 43.1, "jl": 43.1, "lua": 43.9, "pl": 42.5, "php": 45.0, "py": 44.1, "r": 43.2, "rkt": 38.0, "rb": 41.7, "rs": 42.7, "scala": 41.1, "sh": 44.3, "swift": 45.4, "ts": 43.8},
+    "output_prediction": {"cs": 40.3, "cpp": 42.4, "d": 42.3, "go": 42.6, "java": 37.9, "js": 45.1, "jl": 43.1, "lua": 41.6, "pl": 41.3, "php": 43.8, "py": 44.2, "r": 40.4, "rkt": 38.3, "rb": 43.5, "rs": 43.4, "scala": 41.5, "sh": 40.1, "swift": 44.6, "ts": 44.6}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source": "Multi-LCB (ICLR 2026), Table 1, Pass@1 (%) averaged over 10 runs, temperature t=0.2, Dataset v6 (Feb 2025 - May 2025)",
+  "paper": "https://openreview.net/forum?id=MKxKKsz0cx",
+  "metric": "pass@1",
+  "task_type": "generation",
+  "languages": ["Python", "C++", "Java", "Go", "JavaScript", "TypeScript", "C#", "Rust", "Ruby", "PHP", "Kotlin", "Scala"],
+  "models": {
+    "Gpt-oss-120B* (Medium)": {"Python": 71.1, "C++": 72.3, "Java": 70.4, "Go": 69.9, "JavaScript": 70.5, "TypeScript": 70.3, "C#": 57.3, "Rust": 70.5, "Ruby": 70.2, "PHP": 66.1, "Kotlin": 71.0, "Scala": 54.1},
+    "Qwen3-235B-A22B-Thk-2507*": {"Python": 74.0, "C++": 75.8, "Java": 73.9, "Go": 56.7, "JavaScript": 67.0, "TypeScript": 62.5, "C#": 66.5, "Rust": 47.7, "Ruby": 49.4, "PHP": 69.0, "Kotlin": 67.7, "Scala": 57.6},
+    "DeepSeek-R1-0528*": {"Python": 66.3, "C++": 68.0, "Java": 67.8, "Go": 55.0, "JavaScript": 64.6, "TypeScript": 58.9, "C#": 61.6, "Rust": 63.1, "Ruby": 62.4, "PHP": 61.6, "Kotlin": 66.0, "Scala": 62.3},
+    "Gpt-oss-20B* (Medium)": {"Python": 63.6, "C++": 65.7, "Java": 62.7, "Go": 59.9, "JavaScript": 61.9, "TypeScript": 61.8, "C#": 52.4, "Rust": 61.9, "Ruby": 61.7, "PHP": 60.5, "Kotlin": 62.4, "Scala": 43.1},
+    "Qwen3-30B-A3B-Thk-2507*": {"Python": 64.0, "C++": 65.7, "Java": 62.4, "Go": 44.1, "JavaScript": 51.9, "TypeScript": 46.5, "C#": 56.5, "Rust": 51.7, "Ruby": 42.1, "PHP": 58.8, "Kotlin": 50.6, "Scala": 43.6},
+    "Gpt-oss-120B* (Low)": {"Python": 56.0, "C++": 55.4, "Java": 56.8, "Go": 51.8, "JavaScript": 55.9, "TypeScript": 55.6, "C#": 45.7, "Rust": 56.0, "Ruby": 53.0, "PHP": 53.4, "Kotlin": 55.8, "Scala": 42.2},
+    "Qwen3-235B-A22B*": {"Python": 58.9, "C++": 58.3, "Java": 55.0, "Go": 48.7, "JavaScript": 50.0, "TypeScript": 48.8, "C#": 51.0, "Rust": 40.7, "Ruby": 46.6, "PHP": 48.4, "Kotlin": 47.5, "Scala": 33.6},
+    "Qwen3-32B*": {"Python": 57.6, "C++": 55.3, "Java": 56.0, "Go": 42.1, "JavaScript": 49.6, "TypeScript": 49.3, "C#": 49.1, "Rust": 40.1, "Ruby": 52.1, "PHP": 50.0, "Kotlin": 46.4, "Scala": 35.6},
+    "Qwen3-30B-A3B*": {"Python": 55.0, "C++": 51.5, "Java": 50.6, "Go": 36.9, "JavaScript": 49.9, "TypeScript": 48.2, "C#": 43.9, "Rust": 38.4, "Ruby": 46.8, "PHP": 48.0, "Kotlin": 44.3, "Scala": 32.2},
+    "Gpt-oss-20B* (Low)": {"Python": 46.2, "C++": 47.9, "Java": 46.3, "Go": 42.6, "JavaScript": 45.1, "TypeScript": 42.7, "C#": 41.2, "Rust": 42.0, "Ruby": 44.7, "PHP": 45.8, "Kotlin": 46.3, "Scala": 29.2},
+    "Qwen3-14B*": {"Python": 53.5, "C++": 47.2, "Java": 47.2, "Go": 32.4, "JavaScript": 45.0, "TypeScript": 46.0, "C#": 43.3, "Rust": 31.5, "Ruby": 45.3, "PHP": 45.5, "Kotlin": 39.2, "Scala": 32.4},
+    "Qwen3-235B-A22B-Instr-2507": {"Python": 43.8, "C++": 42.7, "Java": 45.5, "Go": 35.0, "JavaScript": 26.4, "TypeScript": 19.5, "C#": 44.1, "Rust": 39.5, "Ruby": 41.5, "PHP": 42.4, "Kotlin": 41.1, "Scala": 28.1},
+    "Qwen3-8B*": {"Python": 46.3, "C++": 39.7, "Java": 36.7, "Go": 25.8, "JavaScript": 36.5, "TypeScript": 38.8, "C#": 36.3, "Rust": 20.5, "Ruby": 39.5, "PHP": 36.0, "Kotlin": 24.0, "Scala": 27.0},
+    "Qwen3-Coder-30B-A3B-Instr": {"Python": 36.6, "C++": 31.1, "Java": 35.3, "Go": 25.8, "JavaScript": 28.4, "TypeScript": 28.0, "C#": 34.7, "Rust": 34.3, "Ruby": 34.7, "PHP": 31.8, "Kotlin": 35.7, "Scala": 20.2},
+    "Qwen3-30B-A3B-Instr-2507": {"Python": 38.9, "C++": 35.6, "Java": 37.2, "Go": 22.4, "JavaScript": 20.8, "TypeScript": 18.2, "C#": 36.5, "Rust": 32.1, "Ruby": 34.7, "PHP": 34.8, "Kotlin": 35.9, "Scala": 25.7},
+    "Qwen2.5-Coder-32B-Instr": {"Python": 27.5, "C++": 26.9, "Java": 30.5, "Go": 23.9, "JavaScript": 6.3, "TypeScript": 28.8, "C#": 28.5, "Rust": 24.7, "Ruby": 24.6, "PHP": 27.3, "Kotlin": 26.6, "Scala": 24.5},
+    "Seed-Coder-8B-Instr": {"Python": 22.1, "C++": 23.4, "Java": 26.0, "Go": 22.1, "JavaScript": 23.3, "TypeScript": 23.1, "C#": 27.0, "Rust": 21.8, "Ruby": 21.6, "PHP": 20.4, "Kotlin": 23.4, "Scala": 21.8},
+    "OpenRsn-Nmt-32B*": {"Python": 64.4, "C++": 44.2, "Java": 40.8, "Go": 11.5, "JavaScript": 10.8, "TypeScript": 10.5, "C#": 29.9, "Rust": 2.8, "Ruby": 18.3, "PHP": 15.8, "Kotlin": 17.3, "Scala": 6.0},
+    "DeepSeek-R1-Distill-Qwen-32B*": {"Python": 39.4, "C++": 22.2, "Java": 33.2, "Go": 11.9, "JavaScript": 16.2, "TypeScript": 11.6, "C#": 29.3, "Rust": 20.2, "Ruby": 40.1, "PHP": 12.9, "Kotlin": 20.5, "Scala": 7.0},
+    "Devstral-Small-2505*": {"Python": 23.2, "C++": 22.6, "Java": 22.8, "Go": 16.1, "JavaScript": 22.7, "TypeScript": 24.7, "C#": 24.1, "Rust": 19.9, "Ruby": 19.9, "PHP": 20.8, "Kotlin": 21.2, "Scala": 17.2},
+    "Qwen2.5-Coder-14B-Instr": {"Python": 22.0, "C++": 21.3, "Java": 23.9, "Go": 19.2, "JavaScript": 22.6, "TypeScript": 17.5, "C#": 23.3, "Rust": 16.7, "Ruby": 22.7, "PHP": 22.7, "Kotlin": 18.1, "Scala": 20.4},
+    "OpenCodeRsn-Nmt-1.1-32B*": {"Python": 56.0, "C++": 37.3, "Java": 33.1, "Go": 9.9, "JavaScript": 8.2, "TypeScript": 4.9, "C#": 25.5, "Rust": 1.1, "Ruby": 23.4, "PHP": 19.3, "Kotlin": 12.3, "Scala": 7.0},
+    "DeepSeek-R1-Distill-Qwen-14B*": {"Python": 41.8, "C++": 16.3, "Java": 24.9, "Go": 10.8, "JavaScript": 10.2, "TypeScript": 11.5, "C#": 29.2, "Rust": 3.7, "Ruby": 34.5, "PHP": 3.8, "Kotlin": 11.5, "Scala": 3.3},
+    "Deepseek-Coder-33B-Instr": {"Python": 17.2, "C++": 16.2, "Java": 18.5, "Go": 12.4, "JavaScript": 8.5, "TypeScript": 7.4, "C#": 17.1, "Rust": 2.6, "Ruby": 15.2, "PHP": 16.5, "Kotlin": 16.0, "Scala": 12.2}
+  }
+}

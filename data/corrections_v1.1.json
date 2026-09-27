@@ -1,0 +1,39 @@
+{
+  "version": "1.1.0",
+  "status": "corrected",
+  "base": {
+    "version": "paper-scored-v1.0",
+    "path": "data\\curated_corpus.json",
+    "sha256": "54c96e665d55681aca2fb19deedf8b8b585574a4a726169309e98e3112570fc5"
+  },
+  "artifact": {
+    "path": "curated_corpus_corrected_v1.1.json",
+    "sha256": "e9d1d372aa0851792fd91dec7182e86103e368f1e91b2f6833f327625b8d87a5"
+  },
+  "changes": [
+    {
+      "algorithm": "edit_distance",
+      "language": "Bash",
+      "reason": "Expand numeric loop indices when initializing dynamic-programming boundaries.",
+      "before_sha256": "64736ca94becf39bcef5045c0296cfe00e9ac8f1309969f609e14f1ae4bc598f",
+      "after_sha256": "1b46527a8ad0eb25409dec4440d4e7a5fc23eb4dcf768f2f64e8a6665edd7598"
+    },
+    {
+      "algorithm": "kmp_search",
+      "language": "Bash",
+      "reason": "Use a distinct local nameref name to avoid a circular reference to the caller's lps array.",
+      "before_sha256": "3a31467825d9086c6168d40c8309a5f0dfa602228ccdc3d2d51ce713a673ea1a",
+      "after_sha256": "149254d9075f050d5dea9940eed7ccf8dd6b684cd5550a5e0810457e61689a86"
+    }
+  ],
+  "validation_reports": [
+    {
+      "path": "execution_validation_bash_swift_v1.1.json",
+      "sha256": "be387f5999c15df4594e29858a6ccfc2245c340dfc212f4c095c9122592c8d4a"
+    },
+    {
+      "path": "execution_validation_full_v1.1.json",
+      "sha256": "d69b35f9a514a44c9b47a9dae961b17fa131b7937e123fe469a640e8547b8cbe"
+    }
+  ]
+}
