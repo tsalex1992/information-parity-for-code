@@ -18,7 +18,10 @@ reproduce the paper's main-text tables and figures:
 The same dataset files are archived in
 [Harvard Dataverse](https://doi.org/10.7910/DVN/KJ7HIH).
 Raw third-party benchmark datasets and model weights are not redistributed
-here.
+here. The source code is released under the MIT License. The first-party
+dataset files listed in `data/SHA256SUMS` are released under CC0 1.0 through
+Harvard Dataverse; third-party benchmark summaries remain subject to their
+original source terms.
 
 ## Dataset variants
 
