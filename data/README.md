@@ -1,8 +1,8 @@
 # Dataset mirror
 
-This directory mirrors the paper's small first-party datasets. Harvard
-Dataverse will serve as the canonical archival release; the public DOI will be
-added before this repository is made public.
+This directory mirrors the paper's small first-party datasets. The canonical
+archival release is available through
+[Harvard Dataverse](https://doi.org/10.7910/DVN/KJ7HIH).
 
 ## Curated corpus
 
