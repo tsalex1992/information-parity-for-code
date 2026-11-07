@@ -1,8 +1,16 @@
 # Information Parity for Code
 
-Code and compact reproducibility inputs for **Information Parity for Code: The
+Paper, code, and compact reproducibility inputs for **Information Parity for Code: The
 Scope of Transfer in Multilingual Code Models** by Alexander Tsvetkov and Alon
 Kipnis.
+
+**[Paper (camera-ready PDF)](paper/information_parity_for_code.pdf)** ·
+**[Datasets](data/README.md)** ·
+**[Dataset archive](https://doi.org/10.7910/DVN/KJ7HIH)**
+
+The PDF is the authors' camera-ready version for NeurIPS 2026,
+Evaluations & Datasets track. The code and dataset licenses described below
+apply to their respective artifacts, not to the paper.
 
 This repository contains the minimal analysis path needed to inspect and
 reproduce the paper's main-text tables and figures:
