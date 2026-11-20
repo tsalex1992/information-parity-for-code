@@ -5,6 +5,7 @@ Scope of Transfer in Multilingual Code Models** by Alexander Tsvetkov and Alon
 Kipnis.
 
 **[Paper (camera-ready PDF)](paper/information_parity_for_code.pdf)** ·
+**[Paper (OpenReview)](https://openreview.net/forum?id=9Vw26t3fU5)** ·
 **[Datasets](data/README.md)** ·
 **[Dataset archive](https://doi.org/10.7910/DVN/KJ7HIH)**
 
@@ -94,3 +95,17 @@ uv run python main.py score-curated \
 Full multi-model rescoring is not required to inspect the reported analyses;
 the per-model metric files used by the aggregation scripts are included under
 `results/`.
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@inproceedings{tsvetkov2026information,
+  title     = {Information Parity for Code: The Scope of Transfer in Multilingual Code Models},
+  author    = {Alexander Tsvetkov and Alon Kipnis},
+  booktitle = {The Fortieth Annual Conference on Neural Information Processing Systems Evaluations and Datasets Track},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=9Vw26t3fU5}
+}
+```

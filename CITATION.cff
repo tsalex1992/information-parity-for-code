@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper below."
+title: "Information Parity for Code"
+authors:
+  - family-names: Tsvetkov
+    given-names: Alexander
+  - family-names: Kipnis
+    given-names: Alon
+preferred-citation:
+  type: conference-paper
+  title: "Information Parity for Code: The Scope of Transfer in Multilingual Code Models"
+  authors:
+    - family-names: Tsvetkov
+      given-names: Alexander
+    - family-names: Kipnis
+      given-names: Alon
+  collection-title: "The Fortieth Annual Conference on Neural Information Processing Systems Evaluations and Datasets Track"
+  year: 2026
+  url: "https://openreview.net/forum?id=9Vw26t3fU5"
